@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="UTF -8">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<title>Twitter chat Assignment</title>
+<style>
+#count{
+  padding-left: 10px;
+}
+</style>
+</head>
+<body>
+<textarea name="tweet" id="tweet" cols="30" rows="10" maxlength="140" placeholder="Post Your Opinion..."></textarea><span id="count">0</span><span>/140</span>
+
+<script>
+     let i=0;
+  document.querySelector("#tweet").addEventListener("keypress", function(){
+   
+    i++;
+    if(i<=140){
+      document.querySelector('#count').innerHTML =i;
+    } 
+  });
+  </script>
+</body>
+</html>
